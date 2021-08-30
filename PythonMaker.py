@@ -18,21 +18,25 @@ def variable272():
     varValueType = int(input("What type is this value?\n1 • Integer\n2 • String\n3 • Float\n4 • Boolean "))
     if varValueType == 1:
         varValue = int(varValue)
+        varVal2 = "int"
         varList[varName] = (varValue)
     elif varValueType == 2:
         varValue = str(varValue)
+        varVal2 = "str"
         varList[varName] = (varValue)
     elif varValueType == 3:
         varValue = float(varValue)
+        varVal2 = "float"
         varList[varName] = (varValue)
     elif varValueType == 4:
         varValue = bool(varValue)
+        varVal2 = "bool"
         varList[varName] = (varValue)
     else: 
         print("It would appear you typed something incorrect! :/")
         return
     
-    f1.write(f'{varName} = {varValueType}({varValue})\n')
+    f1.write(f'{varName} = {varVal2}({varValue})\n')
     
     
     
@@ -57,7 +61,8 @@ def print272():
             posPrintVar = int(input("At what point in the string would you like the variable "))
             startPrint = (printString[:posPrintVar])
             finishPrint = (printString[posPrintVar:])
-            printStatement = f"{startPrint} {printVariable} {finishPrint}"
+            printVariable22 = "{" + str(printVariable) + "}"
+            printStatement = f"{startPrint} {printVariable22} {finishPrint}"
     elif printintPut == 3:
         printVal1 = int(input("What type is the first value?\n1 • Variable\n2 • Integer\n3 • Float "))
         if printVal1 == 1:
@@ -103,7 +108,7 @@ def print272():
         return
     
     
-    f1.write(f'Print("{printStatement}")\n')
+    f1.write(f'Print(f"{printStatement}")\n')
     
     
     
