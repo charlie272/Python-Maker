@@ -1,4 +1,5 @@
-print("Hi, welcome to the PythonMaker \nMade by 272!!!")
+print("Hi, welcome to the PythonMaker \nMade by 272 and Modified by SkeldLIfe!!!")
+print("Upcoming updates! \n1. PIP Features")
 
 try:
     f3 = open("Output.txt", "x")
@@ -38,6 +39,16 @@ def variable272():
     
     f1.write(f'{varName} = {varVal2}({varValue})\n')
     
+    def pip272 !=2 :
+        printStatement = ""
+        printintPut = int(input("Do you want to install any packages to your python script? /n Example : Discord.py or random or press type 2 to proceed"))
+        if pip272 == 1:
+            print("This command is still in progress and not in use, please ignore this one")
+        elif pip272 == 2:
+            fl.close
+            break
+        
+        
     
     
     
